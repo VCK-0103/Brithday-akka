@@ -74,7 +74,8 @@
   .hb-dot { width:14px; height:14px; border-radius:50%; background:#f0c020; display:inline-block; }
   .veena-name { font-family:'Dancing Script',cursive; font-size:28px; color:#e060a0; text-align:center; }
   .bears { font-size:72px; text-align:center; line-height:1; }
-   .next-btn {
+
+  .next-btn {
   background: #111;
   color: white;
   border: none;
@@ -83,16 +84,18 @@
   font-size: 14px;
   font-weight: 800;
   cursor: pointer;
-  display: block;
-  margin: 20px auto;
   font-family: 'Nunito', sans-serif;
-  transition: transform 0.1s;
+
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
 }
 
-.next-btn:active{
-  transform:translateX(-50%) scale(0.95);
+.next-btn:active {
+  transform: translateX(-50%) scale(0.95);
 }
-  
  
 
   /* ── S3 GIFT BOXES ── */
