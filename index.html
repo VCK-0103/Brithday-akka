@@ -90,19 +90,69 @@
   .gift-sub { font-family:'Dancing Script',cursive; font-size:16px; color:#e06090; text-align:center; }
 
   /* ── S4a MAKE A WISH ── */
-  #s4a { background:#c8000a; padding:28px 20px; align-items:center; gap:14px; }
-  .wish-title { font-family:'Dancing Script',cursive; font-size:34px; color:white; text-align:center; }
-  .blow-btn { background:#900006; color:white; border:none; border-radius:50px; padding:13px 40px; font-size:17px; font-weight:800; cursor:pointer; font-family:'Nunito',sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.35); }
-  .blow-btn:active { transform:scale(0.93); }
+ #s4a {
+  background: #c8000a;
+  padding: 28px 20px 100px;
+  align-items: center;
+  gap: 14px;
+ }
+ .wish-title { font-family:'Dancing Script',cursive; font-size:34px; color:white; text-align:center; }
+ .blow-btn {
+  background: #900006;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 13px 40px;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.blow-btn:active {
+  transform: translateX(-50%) scale(0.93);
+}
 
   /* ── S4b HAPPY BIRTHDAY AKKA ── */
-  #s4b { background:#c8000a; padding:28px 20px; align-items:center; gap:14px; }
-  .love-title { font-size:24px; font-weight:800; color:white; text-align:center; position:relative; padding:0 20px; line-height:1.3; }
+  #s4b {
+  background: #c8000a;
+  padding: 28px 20px 100px;
+  align-items: center;
+  gap: 14px;
+}
+
+ .love-title { font-size:24px; font-weight:800; color:white; text-align:center; position:relative; padding:0 20px; line-height:1.3; }
   .love-title .star { font-size:16px; position:absolute; }
   .love-title .star-tr { top:-8px; right:0; }
   .love-title .star-bl { bottom:-8px; left:0; }
-  .back-btn { background:#111; color:white; border:none; border-radius:50px; padding:10px 28px; font-size:14px; font-weight:800; cursor:pointer; align-self:flex-end; font-family:'Nunito',sans-serif; margin-top:auto; }
-  .back-btn:active { transform:scale(0.95); }
+ .back-btn {
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.back-btn:active {
+  transform: translateX(-50%) scale(0.95);
+}
 
   /* ── S5 BOX 2: EYE COLLAGE ── */
   #s5 { background:#c8000a; padding:18px 16px 16px; gap:10px; }
